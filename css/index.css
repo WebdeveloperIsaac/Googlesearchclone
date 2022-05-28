@@ -1,0 +1,17 @@
+* {
+    text-decoration: none;
+}
+
+.Nav {
+    display: flex;
+    background-color: rgb(201, 201, 201);
+}
+
+.branding > img {
+    height: 10vh;
+    width: 10vw;
+}
+
+.nav-item {
+    text-decoration: none;
+}
