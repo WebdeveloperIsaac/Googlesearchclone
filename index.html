@@ -9,24 +9,31 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css"/>
 </head>
 <body>
-    <div class="Nav">
-        <div class="branding">
-            <img src="/images/google.png"/>
-        </div>
-        <ul class="navigation">
-            <li class="nav-item">
-                <a href="./googleimages.html">Images</a>
-            </li>
-            <li class="nav-item">
-                <a href="./advancedsearch.html">Advanced Search</a>
-            </li>
-            <li class="nav-item">
-                <a href="#">Sign In</a>
-            </li>
-        </ul>
+    <!--The form to submit <form action="http://www.google.com/search" method="get">
+    <input type="text" name="q"/>
+    <input type="submit" value="search" />
+</form> -->
+    <div class="navigation">
+        <nav>
+            <ul class="nav">
+                <li><a href="/googleimages.html">Images</a></li>
+                <li><a href="/advancedsearch.html">Advanced Search</a></li>
+                <li><img src="./images/Profile Image.jpg"/></li>
+            </ul>
+        </nav>
     </div>
     <div class="container">
-
+        <div class="google-image">
+            <img src="/images/google.png"/>
+        </div>
+        <div class="form">
+            <form action="https://www.google.com/search" >
+                <input type="text" name="q" class="input-text" id="ipt">
+                <div class="search"><img src="./images/seacrh.png" width="20px"/></div>
+                <input type="submit" value="Google Search" class="sbt"  >
+                <input type="submit" value="I'm Feeling Lucky" class="sbt" formaction="https://google.com/search?&btnI=1">
+            </form>
+        </div>
     </div>
 </body>
 </html>

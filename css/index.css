@@ -1,17 +1,37 @@
-* {
-    text-decoration: none;
-}
 
-.Nav {
+.nav{
+    list-style: none;
     display: flex;
-    background-color: rgb(201, 201, 201);
+    flex-direction: row;
+    padding: 10px;
+    float:right;
+}
+.nav >li {
+    padding: 10px;
 }
 
-.branding > img {
-    height: 10vh;
-    width: 10vw;
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25vh;
 }
 
-.nav-item {
-    text-decoration: none;
+.search {
+    display:inline-block;
 }
+input[type=text]{
+    color:red;
+}
+
+.input-text {
+    border-radius: 10px;
+    width: 30vw;
+}
+
+.sbt {
+    display: flex;
+    margin: 10px;
+}
+
