@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Images -Isaac</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="./css/gimage.css"/>
-</head>
-<body>
-    
-</body>
+  <head>
+    <title>Image Search</title>
+    <link rel="stylesheet" href="./css/image&search.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="head">
+      <div id="links">
+        <a href="index.html">Google Search</a>
+      </div>
+    </header>
+    <div id="mainSection">
+      <div id="image">
+        <img src="./images/seacrh.png" alt="" />
+      </div>
+
+      <form action="https://google.com/images">
+        <div id="inputField">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Image Search..." name="q" />
+        </div>
+
+        <div id="button">
+          <input type="submit" value="Google Search" />
+        </div>
+      </form>
+    </div>
+  </body>
 </html>

@@ -7,33 +7,38 @@
     <title>Google Search Clone -Isaac</title>
     <link rel="stylesheet" href="./css/index.css"/>
     <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <!--The form to submit <form action="http://www.google.com/search" method="get">
+    <!--The form to submit
+        <form action="http://www.google.com/search" method="get">
     <input type="text" name="q"/>
-    <input type="submit" value="search" />
-</form> -->
+    <input type="submit" value="search" /-->
+</form>
     <div class="navigation">
         <nav>
             <ul class="nav">
                 <li><a href="/googleimages.html">Images</a></li>
                 <li><a href="/advancedsearch.html">Advanced Search</a></li>
-                <li><img src="./images/Profile Image.jpg"/></li>
             </ul>
         </nav>
     </div>
     <div class="container">
         <div class="google-image">
-            <img src="/images/google.png"/>
+            <img src="/images/google.png" width="250vw"/>
         </div>
-        <div class="form">
-            <form action="https://www.google.com/search" >
-                <input type="text" name="q" class="input-text" id="ipt">
-                <div class="search"><img src="./images/seacrh.png" width="20px"/></div>
-                <input type="submit" value="Google Search" class="sbt"  >
-                <input type="submit" value="I'm Feeling Lucky" class="sbt" formaction="https://google.com/search?&btnI=1">
+            <form action="https://www.google.com/search" class="searchform" >
+                <div class="searching">
+                    <i class="fa fa-search"></i>
+                        <input type="text" name="q" class="inputtext">
+                    <i class="fa fa-microphone"></i>
+                </div>
+                <br/>
+                <div class="submits">
+                <input type="submit" value="Google Search" class="submit1"  >
+                <input type="submit" value="I'm Feeling Lucky" class="submit2" formaction="https://google.com/search?&btnI=1">
+                </div>
             </form>
-        </div>
     </div>
 </body>
 </html>
