@@ -1,73 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Advanced Search</title>
-    <link rel="stylesheet" href="./css/image&search.css" />
-  </head>
-  <body>
-    <div class="advancedHeader">
-      <div class="googleImageLittle">
-        <img src="./images/googleimage.png" alt="" />
-      </div>
-      <a href="index.html">Google Search</a>
-    </div>
-
-    <div class="advancedSubHeader">
-      <h3>Advanced Search</h3>
-    </div>
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Search -Google</title>
+    <link rel="stylesheet" href="./css/advancedsearch.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .btn{
+            float: right;
+            margin-right: 50px;
+        }
+        .sbt{
+            background-color: #4a87ea;
+        }
+    </style>
+</head>
+<body>
+    <nav class=".navbar container-fluid align-right">
+       <a href="./index.html" class="navbar-brand btn">Google</a>
+    </nav>
+    <div class="m-3 p-2">
+    <h2 class="text-danger mt-4">Advanced Search</h2>
+    <hr/>
     <form action="https://google.com/search">
-      <div class="inputOne">
-        <div class="textDesHeading">Find pages with...</div>
-        <div class="input-field"></div>
-        <div class="ToDoHeading">To do this in the search box.</div>
-      </div>
-      <div class="inputOne">
-        <div class="textDes">all these words:</div>
-        <div class="input-field">
-          <input type="text" name="as_q" />
-        </div>
-        <div class="toDo">
-          Type the important words: <span>rat terrier</span>
-        </div>
-      </div>
-      <div class="inputOne">
-        <div class="textDes">this exact word or phrase:</div>
-        <div class="input-field">
-          <input type="text" name="as_epq" />
-        </div>
-        <div class="toDo">
-          Put exact words in quotes:<span>"rat terrier"</span>
-        </div>
-      </div>
-      <div class="inputOne">
-        <div class="textDes">any of these words:</div>
-        <div class="input-field">
-          <input type="text" name="as_oq" />
-        </div>
-        <div class="toDo">
-          Type OR between all the words you want:<span
-            >miniature OR standard</span
-          >
-        </div>
-      </div>
-      <div class="inputOne">
-        <div class="textDes">none of these words:</div>
-        <div class="input-field">
-          <input type="text" name="as_eq" />
-        </div>
-        <div class="toDo">
-          Put a minus sign just before words that you don't want:<span
-            >-rodent, -"Jack Russell"</span
-          >
-        </div>
-      </div>
-      <div class="inputOne">
-        <div class="textDes"></div>
-        <div class="button">
-          <input type="submit" value="Advanced Search" name="btnK" />
-        </div>
-      </div>
+		
+        <table class="text-input-table">
+            <tr><td><h4>Find pages with...</h4></td></tr>	
+            <tr>
+                <td> All of these words: </td>
+                <td> <input name="as_q" type="text" class="searchbar form-control" > </td>
+                <td class="ps-3">Eg: Sir Isaac Newton</td>
+                <!-- all these words -->
+            </tr>
+            <tr>
+                <!-- Exact irbeku andre as_epq -->
+                <td>This exact word or phrase: </td>
+                <td><input name="as_epq" type="text" class="searchbar form-control"></td>
+                <td class="ps-3">Eg: Isaac Newton</td>
+            </tr>
+            <tr>
+                <!-- any of the words that we will give as input -->
+                <td> Any of these words: </td>
+                <td> <input name="as_oq" type="text" class="searchbar form-control"> </td>
+                <td class="ps-3">Eg: Newton Isaac Sir England</td>
+            </tr>
+            <tr>
+                <td>This exact word or phrase: </td>
+                <td><input name="as_epq" type="text" class="searchbar form-control"></td>
+                <td class="ps-3">Eg: Isaac</td>
+            </tr>
+            <tr>
+                <!-- No these words andre thee parameter will be as_eq -->
+                <td>None of these words: </td>
+                <td><input name="as_eq" type="text" class="searchbar form-control"> </td>
+                <td class="ps-3">Eg: Albert Einstien</td>
+            </tr>
+            
+         </table>
+         <div class="container-fluid"><input type="submit" value="Advanced Search" class="btn btn-primary sbt"></div>
+        
+         <!-- <form action="https://www.google.com/advanced_search?as_q=q&as_epq=r&as_oq=s&as_eq=t"> -->
+
     </form>
-  </body>
+</div>	
+</body>
 </html>
