@@ -71,7 +71,7 @@ ul {
     cursor: pointer;
   }
   .button{
-    background-color: #fbf6f6;
+    background-color:#4285F4;
     border:none;
     color:#221f1f;
     font-size:15px;
@@ -82,7 +82,7 @@ ul {
     cursor: pointer;
   }
   .button:hover{
-    border: 1px solid #c8c8c8;
+    border: 1px solid #8f8989;
     padding: 9px 19px;
     color:#0f0e0e;
   }
