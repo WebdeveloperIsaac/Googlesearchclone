@@ -15,47 +15,77 @@
         .sbt{
             background-color: #4a87ea;
         }
+        .navy{
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-end;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 0;
+            padding-left: 0;
+            color: black;
+        }
+        .navy:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        .searchbar{
+            width: 400px;
+            margin: 8px ;
+        }
+        @media screen and (max-width:600px){
+            .desc{
+                visibility: hidden;
+            }
+            .des1{
+                width: 50px;
+            }
+            .searchbar{
+                width: 200px;
+                margin-left: 50px;
+            }
+        }
     </style>
 </head>
 <body>
     <nav class=".navbar container-fluid align-right">
-       <a href="./index.html" class="navbar-brand btn">Google</a>
+       <a href="./index.html" class="navbar-brand navy">Google</a>
     </nav>
     <div class="m-3 p-2">
-    <h2 class="text-danger mt-4">Advanced Search</h2>
+    <h2 class="text-danger mt-1">Advanced Search</h2>
     <hr/>
     <form action="https://google.com/search">
 		
         <table class="text-input-table">
             <tr><td><h4>Find pages with...</h4></td></tr>	
             <tr>
-                <td> All of these words: </td>
-                <td> <input name="as_q" type="text" class="searchbar form-control" > </td>
-                <td class="ps-3">Eg: Sir Isaac Newton</td>
+                <td class="des1"> All of these words: </td>
+                <td > <input name="as_q" type="text" class="searchbar form-control" > </td>
+                <td class="ps-3 desc">Type the important words Eg: Sir Isaac Newton</td>
                 <!-- all these words -->
             </tr>
             <tr>
                 <!-- Exact irbeku andre as_epq -->
-                <td>This exact word or phrase: </td>
-                <td><input name="as_epq" type="text" class="searchbar form-control"></td>
-                <td class="ps-3">Eg: Isaac Newton</td>
+                <td class="des1">This exact word or phrase: </td>
+                <td ><input name="as_epq" type="text" class="searchbar form-control"></td>
+                <td class="ps-3 desc">Put exact words in quotes Eg: Isaac Newton</td>
             </tr>
             <tr>
                 <!-- any of the words that we will give as input -->
-                <td> Any of these words: </td>
+                <td class="des1"> Any of these words: </td>
                 <td> <input name="as_oq" type="text" class="searchbar form-control"> </td>
-                <td class="ps-3">Eg: Newton Isaac Sir England</td>
+                <td class="ps-3 desc">Type OR between all the words you want: Eg: Newton OR Isaac</td>
             </tr>
             <tr>
-                <td>This exact word or phrase: </td>
+                <td class="des1">This exact word or phrase: </td>
                 <td><input name="as_epq" type="text" class="searchbar form-control"></td>
-                <td class="ps-3">Eg: Isaac</td>
+                <td class="ps-3 desc">Put a minus sign just before words that you don't want: Eg: Isaac</td>
             </tr>
             <tr>
                 <!-- No these words andre thee parameter will be as_eq -->
-                <td>None of these words: </td>
+                <td class="des1">None of these words: </td>
                 <td><input name="as_eq" type="text" class="searchbar form-control"> </td>
-                <td class="ps-3">Eg: Albert Einstien</td>
+                <td class="ps-3 desc">Eg: Albert Einstien</td>
             </tr>
             
          </table>

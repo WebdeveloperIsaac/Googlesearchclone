@@ -9,35 +9,30 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    <!--The form to submit
-        <form action="http://www.google.com/search" method="get">
-    <input type="text" name="q"/>
-    <input type="submit" value="search" /-->
-    <div class="navigation">
-        <nav>
-            <ul class="nav">
-                <li><a href="/googleimages.html">Images</a></li>
-                <li><a href="/advancedsearch.html">Advanced Search</a></li>
-            </ul>
-        </nav>
-    </div>
+<!DOCTYPE html>
+<html>
+    <header>
+        <ul>
+            <li><a href="./advancedsearch.html">Advanced Search</a></li>
+            <li><a href="./googleimages.html">Images</a></li>
+          </ul>  
+    </header>
     <div class="container">
-        <div class="google-image">
-            <img src="/images/google.png" width="250vw"/>
-        </div>
-            <form action="https://www.google.com/search" class="searchform" >
-                <div class="searching">
-                    <i class="fa fa-search"></i>
-                        <input type="text" name="q" class="inputtext">
-                    <i class="fa fa-microphone"></i>
-                </div>
-                <br/>
-                <div class="submits">
-                <input type="submit" value="Google Search" class="submit1"  >
-                <input type="submit" value="I'm Feeling Lucky" class="submit2" formaction="https://google.com/search?&btnI=1">
-                </div>
-            </form>
+
+    <div class="logo">
+      <img alt="Google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
     </div>
-</body>
+    <form action="https://www.google.com/search">
+    <div class="bar">
+      <i class="fa fa-search sch-btn" title="Search Button"></i>
+      <input class="searchbar" type="text" title="Search" name="q">
+      <a href="#"> <img class="voice" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png" title="Search by Voice"></a>
+    </div>  
+    <div class="buttons">
+      <button class="button" type="submit" value="Google Search" >Google Search</button>
+      <input type="submit" name="btnI" value="I'm Feeling Lucky" class="button" formaction="https://google.com/search?&btnI=1">
+     </div>
+    </form>
+    </div>
+  </body>
 </html>
